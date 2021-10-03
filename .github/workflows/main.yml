@@ -21,8 +21,8 @@ jobs:
       - name: Docker Build and Push
         uses: docker/build-push-action@v2.7.0
         with:
-          context: ./src
-          file: ./src/Dockerfile 
+          context: ./
+          file: ./Dockerfile 
           push: true
           tags: |
             epinheiro/conversaopeso:latest
@@ -46,4 +46,4 @@ jobs:
         with:
           images: epinheiro/conversaopeso:${{ github.run_number }}
           manifests: |
-            src/k8s/deployment.yaml
+            k8s/deployment.yaml
