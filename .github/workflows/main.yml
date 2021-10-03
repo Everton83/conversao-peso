@@ -26,7 +26,7 @@ jobs:
           push: true
           tags: |
             epinheiro/conversaopeso:latest
-            epinheiro/conversaopesos:${{ github.run_number }}
+            epinheiro/conversaopeso:${{ github.run_number }}
             
   CD:
      needs: [CI]
