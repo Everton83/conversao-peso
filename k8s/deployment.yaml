@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: epinheiro/conversaopeso:v1
+          image: epinheiro/conversaopeso:latest
           ports:
             - containerPort: 80
 
